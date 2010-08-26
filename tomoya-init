@@ -1,0 +1,28 @@
+#!/bin/sh
+EMACSD=$HOME/.emacs.d
+ELISP=$EMACSD/elisp
+CONF=$EMACSD/conf
+
+if [ ! -d $ELISP ]
+then
+    echo Making $ELISP
+    mkdir -p $ELISP
+fi
+if [ ! -d $CONF ]
+then
+    echo Making $CONF
+    mkdir -p $CONF
+fi
+
+cd $EMACSD
+pwd
+echo 'Getting init.el(including `add-to-load-path'"')"
+curl -O http://github.com/peccu/tomoya-init/raw/master/init.el
+cd $ELISP
+pwd
+echo Getting auto-install.el
+curl -O http://www.emacswiki.org/emacs/download/auto-install.el
+cd $CONF
+pwd
+echo Getting setting for auto-install.el
+curl -O http://github.com/peccu/tomoya-init/raw/master/auto-install.el
