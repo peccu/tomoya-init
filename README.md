@@ -26,16 +26,25 @@ This script gets source of emacs, then <tt>configure</tt>, <tt>make</tt>, <tt>ma
 
 ## Files
 **README**
+
 This file.
+
 **auto-install.el**
+
 setting elisp for auto-install.el
 This elisp is written by tomoya.
+
 **buildemacs**
+
 script builds emacs.
+
 **init.el**
+
 including function add-to-load-path for adding load-path.
 This function is written by tomoya.
-- tomoya-init
+
+**tomoya-init**
+
 install script.
 
 ## License
