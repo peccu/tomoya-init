@@ -17,7 +17,8 @@ fi
 cd $EMACSD
 pwd
 echo 'Getting init.el(including `add-to-load-path'"')"
-curl -O http://github.com/peccu/tomoya-init/raw/master/init.el
+curl --output tomoya-init.el http://github.com/peccu/tomoya-init/raw/master/init.el
+cat tomoya-init.el>>init.el
 cd $ELISP
 pwd
 echo Getting auto-install.el
