@@ -1,8 +1,8 @@
 #!/bin/sh
 # build at current directory
-curl -O http://ftp.gnu.org/pub/gnu/emacs/emacs-23.2.tar.gz
-tar xzvf emacs-23.2.tar.gz
-cd emacs-23.2
+curl -O http://ftp.gnu.org/pub/gnu/emacs/emacs-23.3.tar.gz
+tar xzvf emacs-23.3.tar.gz
+cd emacs-23.3
 ./configure --with-ns --without-x&&make&&make install
 curl -O http://github.com/peccu/tomoya-init/raw/master/tomoya-init
 chmod a+x tomoya-init
