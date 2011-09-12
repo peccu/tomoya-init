@@ -1,6 +1,6 @@
 #!/bin/sh
 # build at current directory
-curl -O http://ftp.gnu.org/pub/gnu/emacs/emacs-23.3.tar.gz
+curl -O http://ftp.gnu.org/pub/gnu/emacs/emacs-23.3a.tar.gz
 tar xzvf emacs-23.3.tar.gz
 cd emacs-23.3
 ./configure --with-ns --without-x&&make&&make install
